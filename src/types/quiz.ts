@@ -6,6 +6,8 @@ export interface Option {
 export interface Question {
   questionText: string;
   options: Option[];
+  multiSelect?: boolean;
+  isTextEntry?: boolean;
 }
 
 export interface Section {

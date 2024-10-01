@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { QuizData, Section, Question } from '../data/quizData';
+import { QuizData, Section, Question } from '../types/quiz';
 import PDFButton from './PDFButton';
 
 interface QuizProps {
