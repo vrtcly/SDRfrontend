@@ -7,6 +7,7 @@ export interface Question {
   questionText: string;
   options: Option[];
   multiSelect?: boolean;
+  isTextEntry?: boolean;
 }
 
 export interface Section {
@@ -50,6 +51,7 @@ export const quizData: QuizData = [
           { label: "Competitor 2", points: 10 },
           { label: "Competitor 3", points: 10 },
         ],
+        isTextEntry: true,
       },
       {
         questionText: "Where has your company been mentioned? (Select all that apply)",
