@@ -42,10 +42,11 @@ const Quiz: React.FC<QuizProps> = ({ data }) => {
             {currentQuestion.options.map((option, oIndex) => (
               <label key={oIndex} className="Option">
                 <input
-                  type="checkbox"
+                  type="radio"
+                  name="quizOption"
                   onChange={() => handleOptionSelect(option.points)}
                 />
-                <span>{option.label} ({option.points} points)</span>
+                <span>{option.label}</span>
               </label>
             ))}
           </div>
